@@ -1,0 +1,32 @@
+{
+    "name": "tym/encryption",
+    "description": "The Smart Encryption package.",
+    "keywords": [
+        "encryption",
+        "security"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yvan Tchuente",
+            "email": "yvantchuente@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Tym\\Encryption\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
