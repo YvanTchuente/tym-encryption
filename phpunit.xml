@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests\bootstrap.php" colors="true">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">tests</directory>
+        </testsuite>
+    </testsuites>
+    <coverage pathCoverage="true">
+        <include>
+            <directory suffix=".php">app</directory>
+        </include>
+        <report>
+            <html outputDirectory="html-coverage" />
+        </report>
+    </coverage>
+    <logging>
+        <junit outputFile="results.xml" />
+    </logging>
+</phpunit>
